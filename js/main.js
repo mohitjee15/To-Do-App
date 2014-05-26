@@ -1,0 +1,10 @@
+(function(app,config){
+    app.setRemainingTasksListId(config.remainingTasksId);
+    app.setDoneTasksListId(config.doneTasksListId);
+    app.setNewTaskFormId(config.newTaskFormId);
+    app.setNewTaskInputName(config.newTaskInputName);
+    app.setNoRemainingTaskId(config.noRemainingTaskId);
+    app.setNoDoneTaskId(config.noDoneTaskId);
+    app.createElementsInstance();
+    app.bindFormToSubmitListner();
+})(window.app,window.config);

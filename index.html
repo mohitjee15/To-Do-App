@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+    <body>
+        <header>
+            <div>
+                <span>To Do List</span>
+            </div>
+        </header>
+        <div class="container clearfix">
+            <div class="new-task-container">
+                <form class="box" id="new-task-form">
+                    <div class="input-container">
+                        <input tabindex="1" type="text" name="new-task" required placeholder="New Task">
+                    </div>
+
+                    <div class="input-container">
+                        <input tabindex="2" type="submit" value="Add">
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="box list-container remaining-tasks-container">
+                <div class="remaining-tasks-head"><span>Remaining Tasks</span></div>
+                    <ul class="remaining-tasks" id="remaining-tasks">
+                        <li>
+                            <label id="no-remaining">
+                                <span>No remaining task</span>
+                            </label>
+                        </li>
+                    </ul>
+            </div>
+            <div class="box list-container done-tasks-container">
+                <div class="done-tasks-head"><span>Done Tasks</span></div>
+                <ul class="done-tasks" id="done-tasks">
+                    <li>
+                        <label id="no-done">
+                            <span>No task done</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="js/config.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
+</html>
